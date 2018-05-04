@@ -18,6 +18,11 @@
                 <button md-button>Share</button>
             </md-card-actions>
         </md-card>
+        <div [hidden]="dish">
+            <md-spinner></md-spinner>
+            <h4>Loading... Please wait</h4>
+        </div>
+
     </div>
 
     <div fxFlex="40">
@@ -32,6 +37,10 @@
             </md-list-item>
             <br> <br>
         </md-list>
+        <div [hidden]="dish">
+            <md-spinner></md-spinner>
+            <h4>Loading... Please wait</h4>
+        </div>
 
     </div>
 
